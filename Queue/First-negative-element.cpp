@@ -10,6 +10,8 @@ void print(vector<int> arr){
 }
 vector<int> first_Negative_element(vector<int> arr,int k){
     vector<int> ans;
+
+    // it is also done by ths simple queue
     deque<int> q;
     for(int i=0; i<k; i++){
         if(arr[i] < 0){

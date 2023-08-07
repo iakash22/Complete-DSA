@@ -1,10 +1,21 @@
-void keypad2(str str){
-//     if(str.size() == 0){
-//         cout<<empty<<<endl;
-//         return ;
-//     }
-//     char digit = str[0] - '0';
-//     for(int i=(digit - 1) * 3; i < digit * 3; i++){
-//         char ch = (char)('a'+ i);
-//     }
-// }
+
+        if(board[i][col]){
+            return false;
+        }
+    }
+
+    // check Diagonal left
+    int maxleft = min(row,col);
+    for(int i=1; i<=maxleft; i++){
+        if(board[row-i][col-i]){
+            return false;
+        }
+    }
+
+    // Check Diagonal Right
+    int maxright = min(row,(n-col)-1);
+    for(int i=1; i<=maxright; i++){
+        if(board[row-i][col+i]){
+            return false;
+        }
+    }

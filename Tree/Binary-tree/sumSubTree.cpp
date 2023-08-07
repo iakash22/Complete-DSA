@@ -18,7 +18,7 @@ pair<bool,int> solve(node* root){
 
     bool leftCheck = left.first;
     bool rightCheck = right.first;
-    bool sumCheck = root.data == left.second + right.second;
+    bool sumCheck = root->data == left.second + right.second;
 
     pair<bool,int> ans;
     if(leftCheck && rightCheck && sumCheck){

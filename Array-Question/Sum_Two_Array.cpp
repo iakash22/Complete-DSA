@@ -59,9 +59,12 @@ vector<int> findArraySum(vector<int>&a, int n, vector<int>&b, int m){
 
 }
 int main(){
-    vector<int> a,b;
+    // vector<int> a,b;
+    char a = '1'- '0';
+    char b = '2'- '0';
+    cout<<a+b;
 
 
-    findArraySum(a,n,b,m);
+    // findArraySum(a,n,b,m);
     return 0;
 }

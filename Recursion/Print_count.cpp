@@ -23,10 +23,16 @@ void Count(int n){
     cout<<n<<endl; */
 }
 int main(){
-    int n;
-    cin>>n;
-    cout<<endl;
-    Count(n);
+    // int n;
+    // cin>>n;
+    // cout<<endl;
+    // Count(n);
 
+    string str = "dabschdhg";
+    int f = str.find("abc");
+    if(str.find("abc") < str.length()){
+        cout<<"i ma here"<<endl;
+    }
+    cout<<f;
     return 0;
 }

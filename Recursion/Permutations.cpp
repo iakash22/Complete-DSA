@@ -107,12 +107,14 @@ void STL_Permutation(vector<int> &ans){
 int main()
 {
     string str = "123";
+    next_permutation(str.begin(), str.end());
+    cout<<str<<endl;
     // permutation1(str, 0);
     cout << endl;
     // permutation2(str, "");
     cout << endl;
     // duplicatePermutationSkip(str, 0);
-    int check[str.size()] = {0,0,0};
+    // int check[str.size()] = {0,0,0};
     // permutation3(str,"",check);
 
     vector<int> ans(3);
@@ -120,7 +122,7 @@ int main()
         ans[i-1] = i;
     }
     STL_Permutation(ans);
-    return 0;
+    // return 0;
 }
 // if(arr.size() == index){
 //     ans.push_back(arr);
