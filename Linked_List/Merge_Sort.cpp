@@ -1,13 +1,14 @@
 #include<bits/stdc++.h>
 using namespace std;
 class Node{
-    int data;
-    Node* next;
+    public :
+        int data;
+        Node* next;
 
-    Node(int data){
-        this->data = data;
-        this->next = NULL;
-    }
+        Node(int data){
+            this->data = data;
+            this->next = NULL;
+        }
 };
 Node* findMid(Node* head){
     Node* slow = head;
@@ -72,6 +73,7 @@ Node* mergeSort(Node* head){
     return result;
 }
 int main(){
-    Node* head = NULL:
+    Node* head = new Node(-1);
+    mergeSort(head);
     return 0;
 }
